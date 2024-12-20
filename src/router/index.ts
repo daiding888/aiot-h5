@@ -15,6 +15,22 @@ const routes = [
     path: '/home',
     name: 'Home',
     component: () => import('../views/Home.vue')
+  },
+  // 设备相关路由
+  {
+    path: '/device',
+    name: 'Device',
+    component: () => import('../views/device/index.vue')
+  },
+  {
+    path: '/device/add',
+    name: 'DeviceAdd',
+    component: () => import('../views/device/add.vue')
+  },
+  {
+    path: '/device/detail/:id',
+    name: 'DeviceDetail',
+    component: () => import('../views/device/detail.vue')
   }
 ]
 

@@ -19,7 +19,11 @@ import {
   Tag,
   PullRefresh,
   Icon,
-  Dialog
+  Dialog,
+  DropdownMenu,
+  DropdownItem,
+  Popup,
+  Picker
 } from 'vant'
 import 'vant/lib/index.css'
 
@@ -42,7 +46,10 @@ app.use(Button)
    .use(PullRefresh)
    .use(Icon)
    .use(Dialog)
-
+   .use(DropdownMenu)
+   .use(DropdownItem)
+   .use(Popup)
+   .use(Picker)
 app.use(router)
 app.use(createPinia())
 
